@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="surveysheet.css">
+    </head>
+    <body>
+         <h1 id="title">Survey Form</h1>
+         <p id="description">Help me make the website better!</p>
+         <form id="survey-form" method="post">
+            <fieldset>
+                <label for="name">Enter Your Name: <input type="text" required name="nam" id="name" placeholder="Name"></label>
+                <label for="email">Enter Your Email: <input type="email" name="mail" id="email" required placeholder="xyz@gmail.com"></label>
+                <label for="number">Enter Your Number: <input type="tel" name="tele" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"></label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>How did you get to know about my website?</legend>
+               <label for="family"><input type="radio" name="knowledge" id="family" class="inline" value="Family"> Family</label>
+               <label for="friend"><input type="radio" name="knowledge" id="friend" class="inline" value="Friend"> Friend</label>
+            </fieldset>
+            <fieldset>
+                 <label for="opinion">What is your favourite thing about this website?
+                 <select id="opinion" name="opi">
+                    <option value="">(select one)</option>
+                    <option value="1">Design and Colour</option>
+                    <option value="2">Ease of Use</option>
+                    <option value="3">Layout</option>
+                    <option value="4">Font Choice</option>
+                </select>
+                </label>
+                <label for="negative">What do you dislike about this website?
+                   <select name="neg" id="negative">
+                     <option value="">(select one)</option>
+                     <option value="1">Font Choice</option>
+                     <option value="2">Layout</option>
+                     <option value="3">Usability</option>
+                     <option value="4">Design and Colour</option>
+                   </select>
+                </label>
+                <label for="remark">Give your remark on how this website could be improved: </label>
+                <textarea name="rem" id="remark" cols="30" rows="3" placeholder="It's already great!"></textarea>
+            </fieldset>
+            <label for="terms-and-conditions"><input type="checkbox" name="toc" id="terms-and-conditions" class="inline">I have accepted the <a href="https://www.youtube.com/watch?v=-SJywvgaJEI">terms and conditions</a></label>
+            <input type="submit" value="Submit">
+         </form>
+    </body>
+</html>
+
